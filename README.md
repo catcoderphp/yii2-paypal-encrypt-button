@@ -89,7 +89,7 @@ On your config.php file, config like this one component  :
             'paypalCertificateId' => 'CFUVS7MAK5JRW ',
             'paypalCertificatePath' => "/$YOUR_CERTS_PATH/paypal_cert_pem_real.pem",
             'publicSSLKeyPath' => "/$YOUR_CERTS_PATH/pubcert.pem",
-            'privateSSLKeyPath' => "/home/catcoder/sites/boca_live/prvkey.pem",
+            'privateSSLKeyPath' => "$YOUR_CERTS_PATH/prvkey.pem",
             'successUrl' => "https://".$_SERVER['SERVER_NAME']."/",
             'failUrl' => "https://".$_SERVER['SERVER_NAME']."/",
             'businessEmail' => "THE PAYPAL BUSINESS EMAIL",
