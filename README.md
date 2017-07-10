@@ -25,7 +25,18 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+On your config.php file, config like this one component  :
 
 ```php
-<?= \catcoderphp\paypalEncrypt\AutoloadExample::widget(); ?>```
+ 'paypalEncrypt' => [
+            'class' => \catcoderphp\paypalEncrypt\PaypalEncrypt::className(),
+            'paypalCertificateId' => 'CFUVS7MAK5JRW ',
+            'paypalCertificatePath' => "/$YOUR_CERTS_PATH/paypal_cert_pem_real.pem",
+            'publicSSLKeyPath' => "/$YOUR_CERTS_PATH/pubcert.pem",
+            'privateSSLKeyPath' => "/home/catcoder/sites/boca_live/prvkey.pem",
+            'successUrl' => "https://".$_SERVER['SERVER_NAME']."/",
+            'failUrl' => "https://".$_SERVER['SERVER_NAME']."/",
+            'businessEmail' => "catcoder.py@gmail.com",
+            "isProduction" => true,
+  ],
+```
