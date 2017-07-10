@@ -86,7 +86,7 @@ On your config.php file, config like this one component  :
 ```php
  'paypalEncrypt' => [
             'class' => \catcoderphp\paypalEncrypt\PaypalEncrypt::className(),
-            'paypalCertificateId' => 'CFUVS7MAK5JRW ',
+            'paypalCertificateId' => '$PAYPAL_CERT_ID',
             'paypalCertificatePath' => "/$YOUR_CERTS_PATH/paypal_cert_pem_real.pem",
             'publicSSLKeyPath' => "/$YOUR_CERTS_PATH/pubcert.pem",
             'privateSSLKeyPath' => "$YOUR_CERTS_PATH/prvkey.pem",
