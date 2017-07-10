@@ -1,0 +1,21 @@
+{
+    "name": "catcoderphp/yii2-paypal-encrypt-button",
+    "description": "Button encrypted to make secure payments",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","paypal","secure payments.yii2 paypal"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose Luis Gomez Jaen",
+            "email": "catcoder.php@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "catcoderphp\\paypalEncrypt\\": ""
+        }
+    }
+}
